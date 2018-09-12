@@ -28,6 +28,7 @@ class BlueVC: UIViewController, BlackVCDelegate {
     //MARK: step 6 finally use the method of the contract here
     func changeBackgroundColor(_ color: UIColor?) {
         view.backgroundColor = color
+        // TODO: create color array
     }
     
 }
