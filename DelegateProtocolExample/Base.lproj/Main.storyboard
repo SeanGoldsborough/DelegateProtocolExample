@@ -37,9 +37,6 @@
                                         <state key="normal" title="Go To PINK">
                                             <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="Okx-ym-ATc" kind="presentation" modalTransitionStyle="crossDissolve" id="99I-S9-jJx"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
