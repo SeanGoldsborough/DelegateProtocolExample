@@ -13,6 +13,7 @@
 		C654082321498FA7001D233B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C654082121498FA7001D233B /* LaunchScreen.storyboard */; };
 		C654082B21498FD7001D233B /* BlueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C654082A21498FD7001D233B /* BlueVC.swift */; };
 		C654082D21498FF1001D233B /* BlackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C654082C21498FF1001D233B /* BlackVC.swift */; };
+		C654082F2149AAAF001D233B /* PinkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C654082E2149AAAE001D233B /* PinkVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C654082421498FA7001D233B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C654082A21498FD7001D233B /* BlueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueVC.swift; sourceTree = "<group>"; };
 		C654082C21498FF1001D233B /* BlackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackVC.swift; sourceTree = "<group>"; };
+		C654082E2149AAAE001D233B /* PinkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				C654081821498FA3001D233B /* AppDelegate.swift */,
 				C654082A21498FD7001D233B /* BlueVC.swift */,
 				C654082C21498FF1001D233B /* BlackVC.swift */,
+				C654082E2149AAAE001D233B /* PinkVC.swift */,
 				C654081C21498FA3001D233B /* Main.storyboard */,
 				C654081F21498FA7001D233B /* Assets.xcassets */,
 				C654082121498FA7001D233B /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				C654081921498FA3001D233B /* AppDelegate.swift in Sources */,
 				C654082D21498FF1001D233B /* BlackVC.swift in Sources */,
+				C654082F2149AAAF001D233B /* PinkVC.swift in Sources */,
 				C654082B21498FD7001D233B /* BlueVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

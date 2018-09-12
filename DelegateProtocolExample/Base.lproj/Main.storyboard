@@ -102,7 +102,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="PF8-gc-sZO">
-                        <barButtonItem key="rightBarButtonItem" title="Dismiss" id="3CZ-FD-hjZ"/>
+                        <barButtonItem key="rightBarButtonItem" title="Dismiss" id="3CZ-FD-hjZ">
+                            <connections>
+                                <action selector="dismissView:" destination="5Aj-xA-hGQ" id="ZW1-co-tcY"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -132,14 +136,28 @@
             </objects>
             <point key="canvasLocation" x="65" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--PinkVC-->
         <scene sceneID="N4f-nU-JDw">
             <objects>
-                <viewController id="Okx-ym-ATc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PinkVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Okx-ym-ATc" customClass="PinkVC" customModule="DelegateProtocolExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wDE-cc-VLn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ol-Ee-c4e">
+                                <rect key="frame" x="158" y="318" width="58" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Go Back"/>
+                                <connections>
+                                    <action selector="dismissPink" destination="Okx-ym-ATc" eventType="touchUpInside" id="1rU-M3-9jM"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.98760443929999997" green="0.57333081959999999" blue="0.51162141559999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3ol-Ee-c4e" firstAttribute="centerX" secondItem="wDE-cc-VLn" secondAttribute="centerX" id="YeW-9j-Qeh"/>
+                            <constraint firstItem="3ol-Ee-c4e" firstAttribute="centerY" secondItem="wDE-cc-VLn" secondAttribute="centerY" id="wuW-tK-h75"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pQy-xu-6jC"/>
                     </view>
                 </viewController>
