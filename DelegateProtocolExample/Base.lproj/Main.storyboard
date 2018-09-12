@@ -133,36 +133,6 @@
             </objects>
             <point key="canvasLocation" x="65" y="134"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="qAc-Mu-j28">
-            <objects>
-                <viewController id="4PY-1K-4aI" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="msA-qX-BNg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="SVb-n6-tBW"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oFc-Fd-P3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="65" y="821"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="30D-vg-dBM">
-            <objects>
-                <viewController id="eIS-mN-DwH" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="A1C-XH-CrH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="gan-ZR-6Rh"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4d3-xn-3KF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1807" y="1080"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="V74-c7-ZjC">
             <objects>
