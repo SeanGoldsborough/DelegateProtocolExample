@@ -23,6 +23,6 @@ class PinkVC: UIViewController {
     
     
     func stuff() {
-        print("stuff")
+        print("stuff stuff")
     }
 }
