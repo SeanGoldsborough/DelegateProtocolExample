@@ -18,17 +18,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9B-yy-q7e">
-                                <rect key="frame" x="164" y="318" width="112" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="bi9-rJ-zCe" kind="presentation" id="Dwp-0k-OjJ"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="J5G-OR-dHh">
+                                <rect key="frame" x="87" y="299.5" width="200" height="68"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9B-yy-q7e">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="NextVC">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="bi9-rJ-zCe" kind="presentation" id="Dwp-0k-OjJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPm-ZL-JI3">
+                                        <rect key="frame" x="0.0" y="38" width="200" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Go To PINK">
+                                            <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Okx-ym-ATc" kind="presentation" modalTransitionStyle="crossDissolve" id="99I-S9-jJx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Uz9-KB-MX3"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="J5G-OR-dHh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4ee-sa-HVP"/>
+                            <constraint firstItem="J5G-OR-dHh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cHK-jF-ZYN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="OjX-wO-c4V"/>
@@ -79,7 +102,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="PF8-gc-sZO">
-                        <barButtonItem key="rightBarButtonItem" title="Dismiss" id="3CZ-FD-hjZ"/>
+                        <barButtonItem key="rightBarButtonItem" title="Dismiss" id="3CZ-FD-hjZ">
+                            <connections>
+                                <action selector="dismissView:" destination="5Aj-xA-hGQ" id="ZW1-co-tcY"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -108,6 +135,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEH-TU-UjA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="65" y="134"/>
+        </scene>
+        <!--PinkVC-->
+        <scene sceneID="N4f-nU-JDw">
+            <objects>
+                <viewController storyboardIdentifier="PinkVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Okx-ym-ATc" customClass="PinkVC" customModule="DelegateProtocolExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wDE-cc-VLn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ol-Ee-c4e">
+                                <rect key="frame" x="158" y="318" width="58" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Go Back"/>
+                                <connections>
+                                    <action selector="dismissPink" destination="Okx-ym-ATc" eventType="touchUpInside" id="1rU-M3-9jM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98760443929999997" green="0.57333081959999999" blue="0.51162141559999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3ol-Ee-c4e" firstAttribute="centerX" secondItem="wDE-cc-VLn" secondAttribute="centerX" id="YeW-9j-Qeh"/>
+                            <constraint firstItem="3ol-Ee-c4e" firstAttribute="centerY" secondItem="wDE-cc-VLn" secondAttribute="centerY" id="wuW-tK-h75"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pQy-xu-6jC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rT8-Eg-x9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="412" y="875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="V74-c7-ZjC">
